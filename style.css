@@ -3,17 +3,37 @@ body{
     
 }
 
-#rock{
+/* #rock{
 position: absolute;
 width: 110px;
 height: 110px;
 left: 477px;
 top: 329px;
 background: #FFFFFF;
+background: url(icons8-fist-67\ 1.png);
 box-shadow: inset 3px 0px 21px 1px rgba(0, 0, 0, 0.2);
 border: 16px solid #0074B6;
 border-radius: 50%;
 filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+}
+ */
+
+
+#rock {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 477px;
+    top: 329px;
+    background: #FFFFFF;
+    background-image: url('/icons/icons8-fist-67\ 1.png');
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 3px 0px 21px 1px rgba(0, 0, 0, 0.2);
+    border: 16px solid #0074B6;
+    border-radius: 50%;
+    filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
 }
 
 #paper{
@@ -23,6 +43,10 @@ height: 110px;
 left: 595px;
 top: 533px;
 background: #FFFFFF;
+background-image:  url('/icons/icons8-hand-64\ 1.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: 50px;
 box-shadow: inset 3px 0px 21px 1px rgba(0, 0, 0, 0.2);
 border: 16px solid #FFA943;
 border-radius: 50%;
@@ -36,6 +60,10 @@ height: 110px;
 left: 713px;
 top: 329px;
 background: #FFFFFF;
+background-image: url('/icons/17911\ 1.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: 30px;
 box-shadow: inset 3px 0px 21px 1px rgba(0, 0, 0, 0.2);
 border: 16px solid #BD00FF;
 border-radius: 50%;
@@ -73,3 +101,6 @@ border: 10px solid rgba(0, 0, 0, 0.64);
 transform: rotate(120deg);
 backface-visibility: hidden;
 }
+
+
+
