@@ -1,5 +1,6 @@
 const buttons = document.querySelectorAll('.btns');
 const options = ["rock", "paper", "scissors"];
+const wl =document.querySelector('.wl')
 
 buttons.forEach(element => {
     element.addEventListener('click', () => {
@@ -16,19 +17,19 @@ buttons.forEach(element => {
 function rockPaperScissor(player,computer) {
     
     if (player === computer) {
-        // window,alert("It's a tie!");
-        window,alert("It's a tie!");
+        // window,alert();
+        wl.innerText="It's a tie!";
     } else if (
         (player === "rock" && computer === "scissors") ||
         (player === "paper" && computer === "rock") ||
         (player === "scissors" && computer === "paper")
     ) {
         // window,alert(`You win! Computer chose ${computer}.`);
-        window,alert(`You win! Computer chose ${computer}.`);
+        wl.innerText=`You win! Computer chose ${computer}.`;
         
     } else {
         // window,alert(`You lose! Computer chose ${computer}.`);
-        window,alert(`You lose! Computer chose ${computer}.`);
+        wl.innerText=`You lose! Computer chose ${computer}.`;
     }
     
 }
