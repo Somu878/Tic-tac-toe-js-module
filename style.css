@@ -1,8 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dangrek&display=swap');
 body{
     background-color: #8CC461;
     
 }
-.rock {
+
+.score{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 63px;
+    left:240px;
+    border: #FFFFFF solid 2px;
+    border-radius: 13px;
+    width: 800px;
+    height: 158px;
+}
+.title {
+    position: absolute;
+    width: 135px;
+    top: 5px;
+    left: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.cscore{
+position: absolute;
+width: 139px;
+height: 128px;
+left: 460px;
+top: 15px;
+text-align: center;
+padding-top: 5px;
+font-size: 17px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 600; 
+color: #656565;
+background: #FFFFFF;
+border-radius: 9px;
+line-height: 20px;
+letter-spacing: 0.1em;
+}
+#c {
+    position: absolute;
+    width: 79px;
+    height: 63px;
+    left: 30px;
+    top: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700px;
+    font-style: normal;
+    font-size: 68px;
+    text-align: center;
+    color: #252525;
+}
+.pscore{
+    position: absolute;
+width: 139px;
+height: 128px;
+left: 170px;
+top: 0px;
+text-align: center;
+padding-top: 5px;
+font-size: 17px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 600; 
+color: #656565;
+background: #FFFFFF;
+border-radius: 9px;
+line-height: 20px;
+letter-spacing: 0.1em;
+}
+#p{
+    position: absolute;
+    width: 79px;
+    height: 63px;
+    left: 30px;
+    top: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700px;
+    font-style: normal;
+    font-size: 68px;
+    text-align: center;
+    color: #252525;
+
+}
+.btn{
+    position: relative;
+    right: 150px;
+}
+
+.rock{
     position: absolute;
     width: 110px;
     height: 110px;
@@ -18,9 +113,7 @@ body{
     border-radius: 50%;
     filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
     text-indent: -9999px;
-    
 }
-
 .paper{
 position: absolute;
 width: 110px;
@@ -76,7 +169,6 @@ border: 10px solid rgba(0, 0, 0, 0.64);
 transform: rotate(60.58deg);
 backface-visibility: hidden;
 }
-
 .l3{
 position: absolute;
 width: 140px;
@@ -87,6 +179,74 @@ border: 10px solid rgba(0, 0, 0, 0.64);
 transform: rotate(120deg);
 backface-visibility: hidden;
 }
+.rulebtn{
+position: absolute;
+width: 119px;
+height: 40px;
+left: 990px;
+top: 675px;
+border: 2px solid #FFFFFF;
+border-radius: 10px;
+background-color:#8CC461 ;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 25px;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+}
+.ruleli {
+    box-sizing: border-box;
+    position: absolute;
+    width: 278px;
+    height: 325px;
+    left: 850px;
+    top: 330px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #004429;
+    border: 7px solid #FFFFFF;
+    border-radius: 13px;
+    color: #FFFFFF;
 
+}
+ul{
+    list-style:square;
+    font-size: 13px;
+}
+li{
+    position: relative;
+    top: 55px;
+    line-height: 20px;
+}
+li::marker {
+    color: #FFD600;
+    font-size: 20px;
+  }
+  #r {
+      position: absolute;
+      width: 156px;
+      height: 27px;
+      left: 61px;
+      top: 15px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 29px;
+      line-height: 34px;
+      color: #FFFFFF;
 
+  }
 
+.xbtn{
+position: absolute;
+width: 50px;
+height: 50px;
+left: 245px;
+top :-25px;
+background: #FF0000;
+border: 5px solid #FFFFFF;
+border-radius: 50%;
+font-size: 25px;
+font-family: 'dangrek';
+color: #FFFFFF;
+}
