@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dangrek&display=swap');
 body{
     background-color: #8CC461;
-    overflow: hidden;
+    
 }
 
 .score{
@@ -142,6 +142,7 @@ left: 713px;
 top: 329px;
 background: #FFFFFF;
 background-image: url('/icons/17911\ 1.png');
+/* transform: rotate(5.27deg); */
 background-position: center;
 background-repeat: no-repeat;
 background-size: 30px;
@@ -254,4 +255,118 @@ border-radius: 50%;
 font-size: 25px;
 font-family: 'dangrek';
 color: #FFFFFF;
+}
+.con{
+    bottom: 120px;
+    left: 50px;
+    position: relative;
+}
+.ellipse {
+    position: absolute;
+    border-radius: 50%;
+    
+}
+
+.ellipse.ellipse4 {
+    width: 350px;
+    height: 350px;
+    left: 218px;
+    top: 310px;
+    background: rgba(46, 154, 37, 0.39);
+box-shadow: 0px 1px 62px rgba(0, 0, 0, 0.13);
+}
+
+.ellipse.ellipse3 {
+    width: 300px;
+    height: 300px;
+    left: 240px;
+    top: 335px;
+    background: rgba(29, 168, 43, 0.79);
+}
+
+.ellipse.ellipse5 {
+    width: 250px;
+    height: 250px;
+    left: 265px;
+    top: 360px;
+    background: #3b672014;
+}
+#utext{
+position: absolute;
+width: 113px;
+height: 16px;
+left: 345px;
+top: 405px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+}
+#ctext{
+position: absolute;
+width: 100px;
+height: 16px;
+left: 940px;
+top: 406px;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.compchose{
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        left: 5px;
+        top: 465px;
+        background: #FFFFFF;
+        background-image: url('/icons/17911\ 1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50px;
+        border: 16px solid #BD00FF;
+        border-radius: 50%;
+        transition: none;
+}
+.userchose{
+    position: absolute;
+        width: 140px;
+        height: 140px;
+        left: 900px;
+        top: 465px;
+        background: #FFFFFF;
+        background-image: url('/icons/17911\ 1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50px;
+        box-shadow: inset 3px 0px 21px 1px rgba(0, 0, 0, 0.2);
+        border: 16px solid #BD00FF;
+        border-radius: 50%;
+        filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+}
+
+.whowin{
+position: absolute;
+width: 220px;
+height: 36px;
+left: 625px;
+top: 520px;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+font-style: normal;
+font-weight: 700;
+font-size: 37px;
+line-height: 46px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+
 }
