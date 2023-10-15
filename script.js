@@ -1,5 +1,5 @@
 const container = document.querySelector('.container')
-const buttons = document.querySelectorAll('.btns');
+const buttons = document.querySelectorAll('.btns')
 const con = document.querySelector('.btn')
 const rulesbtn = document.querySelector('.rulebtn')
 const xbtn = document.querySelector('.xbtn')
@@ -7,9 +7,9 @@ const rulelist = document.querySelector('.ruleli')
 rulelist.style.display = "none";
 const results = document.querySelector('.results')
 results.style.display ="none";
-const winceleb = document.querySelector('.winceleb');
+const winceleb = document.querySelector('.winceleb')
 winceleb.style.display ="none";
-const nxtbtn = document.querySelector('.nxtbtn');
+const nxtbtn = document.querySelector('.nxtbtn')
 const opt = ["rock","paper","scissors"];
 const whowin = document.querySelector('.whowin')
 const againpc = document.querySelector('.againpc')
@@ -18,6 +18,14 @@ const user = document.querySelector('.userchose')
 const comp = document.querySelector('.compchose')
 const resplayagain = document.querySelector('.resplayagain')
 const playagainbtn = document.  querySelector('.playagainbtn')
+
+let cvalue = parseInt(localStorage.getItem('computerScore')) || 0;
+let pvalue = parseInt(localStorage.getItem('playerScore'))||0;
+const c = document.getElementById('c')
+const p = document.getElementById('p')
+c.textContent = cvalue;
+p.textContent = pvalue;
+
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         con.style.display = 'none';
@@ -96,6 +104,7 @@ function RockPaperScissors(player, computer) {
                     nxtbtn.style.display="none";
                     console.log("Computer wins! Paper beats rock");
                     ecllipseani.style.left ="600px";
+                    cvalue+=1;
                     break;
                 case "scissors":
                     comp.style.backgroundImage="url('/icons/17911\ 1.png')";
@@ -103,6 +112,7 @@ function RockPaperScissors(player, computer) {
                     comp.style.borderColor="#BD00FF";
                     whowin.innerText="YOU WIN";
                     nxtbtn.style.display="block";
+                    pvalue += 1;
                     console.log("You win! Rock beats scissors");
                     break;
             }
@@ -118,6 +128,7 @@ function RockPaperScissors(player, computer) {
                     comp.style.borderColor="#0074B6";
                     whowin.innerText="YOU WIN";
                     nxtbtn.style.display="block";
+                    pvalue+=1;
                     console.log("You win! Paper beats rock");
                     break;
                 case "paper":
@@ -137,6 +148,7 @@ function RockPaperScissors(player, computer) {
                     whowin.innerText="YOU LOST";
                     ecllipseani.style.left ="600px";
                     nxtbtn.style.display="none";
+                    cvalue+=1;
                     console.log("Computer wins! Scissors beats paper");
                     break;
             }
@@ -153,6 +165,7 @@ function RockPaperScissors(player, computer) {
                     whowin.innerText="YOU LOST";
                     ecllipseani.style.left ="600px";
                     nxtbtn.style.display="none";
+                    cvalue+=1;
                     console.log("Computer wins! Rock beats scissors");
                     break;
                 case "paper":
@@ -161,6 +174,7 @@ function RockPaperScissors(player, computer) {
                     comp.style.borderColor="#FFA943";
                     whowin.innerText="YOU WIN";
                     nxtbtn.style.display="block";
+                    pvalue+=1;
                     console.log("You win! Scissors beats paper");
                     break;
                 case "scissors":
@@ -180,4 +194,8 @@ function RockPaperScissors(player, computer) {
             console.log("Error Occured!!!!!");
             break;
     }
+    c.textContent= cvalue
+    p.textContent=pvalue
+    localStorage.setItem('computerScore', cvalue.toString());
+    localStorage.setItem('playerScore', pvalue.toString());
 }
