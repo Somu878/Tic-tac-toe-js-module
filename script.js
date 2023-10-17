@@ -157,7 +157,7 @@ function RockPaperScissors(player, computer) {
                     nxtbtn.style.display = "none";
                     ecllipseani.style.display = 'none';
                     resplayagain.textContent = "REPLAY";
-                    console.log("It's a tie!");
+                    
                     break;
                 case "scissors":
                     // Updating computer UI based on choice
