@@ -101,7 +101,7 @@ function RockPaperScissors(player, computer) {
                     ecllipseani.style.display = 'none';
                     nxtbtn.style.display = "none";
                     resplayagain.textContent = "REPLAY";
-                    console.log("It's a tie!");
+                   
                     break;
                 case "paper":
                     // Updating computer UI based on choice
@@ -111,7 +111,7 @@ function RockPaperScissors(player, computer) {
                     // Displaying loss message and adjusting UI elements
                     whowin.innerText = "YOU LOST";
                     nxtbtn.style.display = "none";
-                    console.log("Computer wins! Paper beats rock");
+                    
                     ecllipseani.style.left = "600px";
                     cvalue += 1;
                     break;
@@ -124,7 +124,7 @@ function RockPaperScissors(player, computer) {
                     whowin.innerText = "YOU WIN";
                     nxtbtn.style.display = "block";
                     pvalue += 1;
-                    console.log("You win! Rock beats scissors");
+                    
                     break;
             }
             break;
