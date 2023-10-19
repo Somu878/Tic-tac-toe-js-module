@@ -168,7 +168,7 @@ function RockPaperScissors(player, computer) {
                     ecllipseani.style.left = "600px";
                     nxtbtn.style.display = "none";
                     cvalue += 1;
-                    console.log("Computer wins! Scissors beats paper");
+                   
                     break;
             }
             break;
